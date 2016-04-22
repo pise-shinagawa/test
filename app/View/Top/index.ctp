@@ -1,3 +1,8 @@
+<style>
+div{
+	padding:3px;
+}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>
 $(function(){
@@ -26,10 +31,10 @@ $(function(){
 });
 </script>
 <form id="myForm" action="Api/test" method="post">
-	<div>
+	<div>キーワード
 		<input type="text" name="term">
 	</div>
-	<div>
+	<div>メディア
 		<select name="media">
 			<option value="movie">movie</option>
 			<option value="podcast">podcast</option>
@@ -44,30 +49,33 @@ $(function(){
 		</select>
 	</div>
 
-	<div>
+	<div>対象
 		<select name="entity">
 		</select>
 	</div>
 	
-	<div>
+	<div>属性
 		<select name="attribute">
 		</select>
 	</div>
 	
-	<div>
+	<div>国
 		<select name="country">
 				<option value="jp">jp</option>
 		</select>
 	</div>
-	<div>
+	
+	<div>取得上限
 		<input type="number" name="limit" value="50" min="1" max="200">
 	</div>
-	<div>
+	
+	<div>言語
 		<select name="lang">
 			<option value="ja_jp" selected>ja</option>
 			<option value=en_us>en</option>
 		</select>
 	</div>
+	
 	<input type="submit" value="send">
 </form>
 
