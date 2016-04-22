@@ -4,8 +4,7 @@ App::uses('AppController', 'Controller');
 class TopController extends AppController
 {
 	public function index() {
-		$this->set('hoge','hogehoge');
-// 		$this->autoLayout = false;
+		$this->autoLayout = false;
 	}
 	
 	public function test() {
